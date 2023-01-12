@@ -154,6 +154,11 @@
                             @endforeach
                         </div>
                     </div>
+                    <div class="faq mb-3 py-2 border rounded-t-2xl border-[#F5F8FF] ">                     
+
+                        <a href="/bmi-calculator" class="outline-btn btn-translate-z flex bg-[#112954] text-white text-2xl font-normal  rounded-lg py-4 px-2 my-6"><span class=" w-full flex items-center justify-between"><span>Check your BMI</span> <img src="{{asset('/frontend/assets/img/icons/arrow-white.svg')}}" class="ml-2 h-2 w-2" alt="icon"></span></a>
+
+                    </div>
 
                 </div>
             </div>

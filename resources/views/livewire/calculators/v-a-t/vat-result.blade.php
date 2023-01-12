@@ -42,6 +42,8 @@
                     <h3 class="my-5 text-2xl font-semibold">Result</h3>
                     <div class="flex-col sm:flex-row flex items-start sm:items-center justify-between">
 
+                        <span class="bg-[#FFF4E6] text-[#FF7800]  text-base font-normal mr-2 px-3 py-3 rounded-lg">THE RESULT IS: <strong>US€{{ $amount + $vat }}</strong> </span>
+
                         <a href="/vat-calculator"
                             class="recalculate-btn text-white mt-6 sm:mt-0  bg-[#6C7A93] transition-all opacity-100 hover:opacity-90 font-bold rounded-lg text-xs px-5 py-2.5 text-center mr-2 inline-flex items-center">
                             <svg role="status" class="inline mr-3 text-white  hover:animate-anti-spin" width="21"
