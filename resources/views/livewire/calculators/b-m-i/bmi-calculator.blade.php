@@ -49,7 +49,7 @@
                             <div class="t-select">
                                 <span class="flex  justify-between">
                                     <label for="gender"
-                                        class="block mb-2 text-xs font-normal text-[#2B313B]">{{ $details[0]->gender_label }}</label>
+                                        class="block mb-2 text-xs font-normal text-[#000000]">{{ $details[0]->gender_label }}</label>
 
 
                                     <!--Code Block for white tooltip starts-->
@@ -99,7 +99,7 @@
                                     <!--Code Block for white tooltip ends-->
                                 </span>
                                 <select id="gender" name="gender"
-                                    class="bg-white border border-[#F5F8FF] text-[#2B313B] font-semibold text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                                    class="bg-white border border-[#F5F8FF] text-[#2B313B] font-semibold text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3.5">
                                     <option
                                         class="p-3 bg-white border-b border border-[#cccccc] text-xs rounded-lg font-base"
                                         value="Male" selected>Male</option>
@@ -115,7 +115,7 @@
                             <div>
                                 <span class="flex justify-between">
                                     <label for="age"
-                                        class="block mb-2  text-xs font-normal text-[#2B313B]">{{ $details[0]->age_label }}</label>
+                                        class="block mb-2  text-xs font-normal text-[#000000]">{{ $details[0]->age_label }}</label>
 
                                     <!--Code Block for white tooltip starts-->
 
@@ -165,10 +165,10 @@
                                 </span>
                                 <div class="flex">
                                     <input type="text" name="age" id="age"
-                                        class="rounded-none rounded-l-lg bg-white border border-r-0 border-[#F5F8FF] text-[#2B313B] font-normal text-xs focus:ring-[#3b82f6] focus:outline-none focus:border-[#3b82f6] block flex-1 min-w-0 w-full p-2.5"
+                                        class="rounded-none rounded-l-lg bg-white border border-r-0 border-[#A4BCE6] text-[#6C7A93] font-normal text-xs focus:ring-[#3b82f6] focus:outline-none focus:border-[#3b82f6] block flex-1 min-w-0 w-full p-3.5"
                                         placeholder="">
                                     <span
-                                        class="inline-flex items-center px-3 bg-white text-[#2B313B] font-semibold text-xs focus:ring-[3b82f6] border-[#F5F8FF] border rounded-r-md">
+                                        class="inline-flex items-center px-3 bg-white text-[#000] font-semibold text-xs focus:ring-[3b82f6] border-[#A4BCE6] border rounded-r-md">
                                         Year
                                     </span>
                                 </div>
@@ -178,13 +178,13 @@
                             </div>
                             <div>
                                 <label for="weight"
-                                    class="block mb-2  text-xs font-normal text-[#2B313B]">{{ $details[0]->weight_label }}</label>
+                                    class="block mb-2  text-xs font-normal text-[#000000]">{{ $details[0]->weight_label }}</label>
                                 <div class="flex">
                                     <input type="text" name="weight" id="weight"
-                                        class="rounded-none rounded-l-lg bg-white border border-r-0 border-[#F5F8FF] text-[#2B313B] font-normal text-xs focus:ring-[#3b82f6] focus:outline-none focus:border-[#3b82f6] block flex-1 min-w-0 w-full p-2.5"
+                                        class="rounded-none rounded-l-lg bg-white border border-r-0 border-[#A4BCE6] text-[#6C7A93] font-normal text-xs focus:ring-[#3b82f6] focus:outline-none focus:border-[#3b82f6] block flex-1 min-w-0 w-full p-3.5"
                                         placeholder="">
                                     <span
-                                        class="inline-flex items-center px-3 bg-white text-[#2B313B] font-semibold text-xs focus:ring-[3b82f6] border-[#F5F8FF] border rounded-r-md">
+                                        class="inline-flex items-center px-3 bg-white text-[#000] font-semibold text-xs focus:ring-[3b82f6] border-[#A4BCE6] border rounded-r-md">
                                         Kg
                                     </span>
                                 </div>
@@ -194,7 +194,7 @@
                             </div>
                             <div> <span class="flex justify-between">
                                     <label for="height"
-                                        class="block mb-2  text-xs font-normal text-[#2B313B]">{{ $details[0]->height_label }}</label>
+                                        class="block mb-2  text-xs font-normal text-[#000000]">{{ $details[0]->height_label }}</label>
 
                                     <!--Code Block for white tooltip starts-->
 
@@ -245,10 +245,10 @@
                                 </span>
                                 <div class="flex">
                                     <input type="text" name="height" id="height"
-                                        class="rounded-none rounded-l-lg bg-white border border-r-0 border-[#F5F8FF] text-[#2B313B] font-normal text-xs focus:ring-[#3b82f6] focus:outline-none focus:border-[#3b82f6] block flex-1 min-w-0 w-full p-2.5"
+                                        class="rounded-none rounded-l-lg bg-white border border-r-0 border-[#A4BCE6] text-[#6C7A93] font-normal text-xs focus:ring-[#3b82f6] focus:outline-none focus:border-[#3b82f6] block flex-1 min-w-0 w-full p-3.5"
                                         placeholder="">
                                     <span
-                                        class="inline-flex items-center px-3 bg-white text-[#2B313B] font-semibold text-xs focus:ring-[3b82f6] border-[#F5F8FF] border rounded-r-md">
+                                        class="inline-flex items-center px-3 bg-white text-[#000] font-semibold text-xs focus:ring-[3b82f6] border-[#A4BCE6] border rounded-r-md">
                                         Cm
                                     </span>
                                 </div>
@@ -280,10 +280,9 @@
                         <div class="bottom-part flex-none lg:flex lg:justify-between">
                             <div class="w-full lg:w-auto more-links">
                                 <h5 class=" font-bold text-xs text-black mb-2">Other visitors also calculated</h5>
-                                <div class="tag-area flex-wrap flex md:flex-none">
+                                <div class="flex-wrap flex md:flex-none">
                                     <a href="/vat-calculator"
-                                        class="btn-tag outline-btn btn-translate-z text-[#0052FE] bg-[#0052FE] hover:text-white border border-[#0052FE] focus:outline-none focus:ring-none font-normal rounded-md transition-all text-[10px] px-2.5 py-1 text-center mr-2 mb-2">Vat
-                                        calculator</a>
+                                        class="text-[#0052FE] bg-white border border-[#0052FE] font-normal rounded-md transition-all text-[10px] px-2.5 py-1 text-center mr-2 mb-2">Vat calculator</a>
                                    
                                 </div>
                             </div>

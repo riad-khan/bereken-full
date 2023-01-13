@@ -62,7 +62,7 @@
                     <div class="top-part text-center">
                         <span class="text-7xl font-bold text-white">{{$reviews[0]->ratings}}</span><span
                             class="text-[#A4BCE6] text-[32px] font-bold">/10</span>
-                       <div class="flex items-center">
+                       <div class="flex justify-center items-center">
                         {!! html_entity_decode($rates)!!}
                        </div>
                     </div>

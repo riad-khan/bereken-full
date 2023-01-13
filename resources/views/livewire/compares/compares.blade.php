@@ -43,23 +43,23 @@
                     <h2 class="text-2xl font-semibold text-[#2B313B] p-4 sm:pb-6  sm:pt-4">Insurance</h2>
                 </div>
                 <div class="sm:grid-cols-1 gap-2 grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-2">
-                    <div><a class="hover:animate-pulse service-btn flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow  w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md"
+                    <div><a class="service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md hover:text-[#135FFF]"
                             href=""><img src="{{asset('/frontend/assets/img/icons/Liability Insurance.svg')}}" class="mr-3 h-10 w-10" alt="icon">
                             Liability insurance</a></div>
-                    <div><a class="hover:animate-pulse service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md"
+                    <div><a class="service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md hover:text-[#135FFF]"
                             href=""><img src="{{asset('/frontend/assets/img/icons/home-insurance.svg')}}" class="mr-3 h-10 w-10" alt="icon">
                             Home Insurance</a></div>
-                    <div><a class="hover:animate-pulse service-btn flex lg:float-right border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md"
+                    <div><a class="service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md hover:text-[#135FFF]"
                             href=""><img src="{{asset('/frontend/assets/img/icons/Travel Insurance.svg')}}" class="mr-3 h-10 w-10" alt="icon"> Travel insurance
                         </a>
                     </div>
-                    <div><a class="hover:animate-pulse service-btn flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md"
+                    <div><a class="service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md hover:text-[#135FFF]"
                             href="/car-insurance"><img src="{{asset('/frontend/assets/img/icons/car-insurance.svg')}}" class="mr-3 h-10 w-10" alt="icon"> Car
                             Insurance</a></div>
-                    <div><a class="hover:animate-pulse service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md"
+                    <div><a class="service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md hover:text-[#135FFF]"
                             href=""><img src="{{asset('/frontend/assets/img/icons/van-insurance.svg')}}" class="mr-3 h-10 w-10" alt="icon"> Van insurance
                         </a></div>
-                    <div><a class="hover:animate-pulse service-btn flex md:float-right border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md"
+                    <div><a class="service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md hover:text-[#135FFF]"
                             href=""><img src="{{asset('/frontend/assets/img/icons/scooter-insurance.svg')}}" class="mr-3 h-10 w-10" alt="icon"> Scooter insurance
                         </a></div>
                 </div>
@@ -69,10 +69,10 @@
                     <h2 class="text-2xl font-semibold text-[#2B313B] p-4 sm:pb-6  sm:pt-4">Internet & Calling</h2>
                 </div>
                 <div class="sm:grid-cols-1 gap-2 grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-2">
-                    <div><a class="hover:animate-pulse service-btn flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow  w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md"
+                    <div><a class="service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md hover:text-[#135FFF]"
                             href="/internet"><img src="{{asset('/frontend/assets/img/icons/Smart-TV.svg')}}" class="mr-3 h-10 w-10" alt="icon">
                             Internet & TV</a></div>
-                    <div><a class="hover:animate-pulse service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md"
+                    <div><a class="service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md hover:text-[#135FFF]"
                             href="/sim-only"><img src="{{asset('/frontend/assets/img/icons/Sim.svg')}}" class="mr-3 h-10 w-10" alt="icon">
                             Sim Only</a></div>
                 </div>
@@ -82,18 +82,18 @@
                     <h2 class="text-2xl font-semibold text-[#2B313B] p-4 sm:pb-6  sm:pt-4">Health Care</h2>
                 </div>
                 <div class="sm:grid-cols-1 gap-2 grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-2">
-                    <div><a class="hover:animate-pulse service-btn flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow  w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md"
+                    <div><a class="service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md hover:text-[#135FFF]"
                             href=""><img src="{{asset('/frontend/assets/img/icons/Health-Insurance.svg')}}" class="mr-3 h-10 w-10" alt="icon">
                             Health Insurance</a></div>
-                    <div><a class="hover:animate-pulse service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md"
+                    <div><a class="service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md hover:text-[#135FFF]"
                             href=""><img src="{{asset('/frontend/assets/img/icons/physiotherapy.svg')}}" class="mr-3 h-10 w-10" alt="icon">
                             Physiotherapy</a></div>
-                    <div><a class="hover:animate-pulse service-btn flex lg:float-right border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md"
+                    <div><a class="service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md hover:text-[#135FFF]"
                             href=""><img src="{{asset('/frontend/assets/img/icons/general-practitioner.svg')}}" class="mr-3 h-10 w-10" alt="icon"> General practitioner</a>
                     </div>
-                    <div><a class="hover:animate-pulse service-btn flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md"
+                    <div><a class="service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md hover:text-[#135FFF]"
                             href=""><img src="{{asset('/frontend/assets/img/icons/Dental.svg')}}" class="mr-3 h-10 w-10" alt="icon"> Dentist</a></div>
-                    <div><a class="hover:animate-pulse service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md"
+                    <div><a class="service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md hover:text-[#135FFF]"
                             href=""><img src="{{asset('/frontend/assets/img/icons/hospital.svg')}}" class="mr-3 h-10 w-10" alt="icon"> Hospital</a></div>
                 </div>
                 
@@ -102,13 +102,13 @@
                     <h2 class="text-2xl font-semibold text-[#2B313B] p-4 sm:pb-6  sm:pt-4">Money</h2>
                 </div>
                 <div class="sm:grid-cols-1 gap-2 grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-2">
-                    <div><a class="hover:animate-pulse service-btn flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow  w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md"
+                    <div><a class="service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md hover:text-[#135FFF]"
                             href=""><img src="{{asset('/frontend/assets/img/icons/borrow-money-2.svg')}}" class="mr-3 h-10 w-10" alt="icon">
                             Borrow Money</a></div>
-                    <div><a class="hover:animate-pulse service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md"
+                    <div><a class="service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md hover:text-[#135FFF]"
                             href=""><img src="{{asset('/frontend/assets/img/icons/cover.svg')}}" class="mr-3 h-10 w-10" alt="icon">
                             Cover</a></div>
-                    <div><a class="hover:animate-pulse service-btn flex lg:float-right border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md"
+                    <div><a class="service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md hover:text-[#135FFF]"
                             href=""><img src="{{asset('/frontend/assets/img/icons/savings-account.svg')}}" class="mr-3 h-10 w-10" alt="icon"> Savings account</a>
                     </div>
                 </div>
@@ -118,16 +118,16 @@
                     <h2 class="text-2xl font-semibold text-[#2B313B] p-4 sm:pb-6  sm:pt-4">Mortgage</h2>
                 </div>
                 <div class="sm:grid-cols-1 gap-2 grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-2">
-                    <div><a class="hover:animate-pulse service-btn flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow  w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md"
+                    <div><a class="service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md hover:text-[#135FFF]"
                             href=""><img src="{{asset('/frontend/assets/img/icons/mortgage.svg')}}" class="mr-3 h-10 w-10" alt="icon">
                             House Mortgage</a></div>
-                    <div><a class="hover:animate-pulse service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md"
+                    <div><a class="service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md hover:text-[#135FFF]"
                             href=""><img src="{{asset('/frontend/assets/img/icons/mortgage-rates.svg')}}" class="mr-3 h-10 w-10" alt="icon">
                             Compare mortgage rates</a></div>
-                    <div><a class="hover:animate-pulse service-btn flex lg:float-right border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md"
+                    <div><a class="service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md hover:text-[#135FFF]"
                             href=""><img src="{{asset('/frontend/assets/img/icons/maximum-mortgage.svg')}}" class="mr-3 h-10 w-10" alt="icon"> Maximum mortgage</a>
                     </div>
-                    <div><a class="hover:animate-pulse service-btn flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md"
+                    <div><a class="service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md hover:text-[#135FFF]"
                             href=""><img src="{{asset('/frontend/assets/img/icons/advisors-in-your-area.svg')}}" class="mr-3 h-10 w-10" alt="icon"> Compare advisors in your area</a></div>
                 </div>
                 
@@ -136,10 +136,10 @@
                     <h2 class="text-2xl font-semibold text-[#2B313B] p-4 sm:pb-6  sm:pt-4">Energy</h2>
                 </div>
                 <div class="sm:grid-cols-1 gap-2 grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-2">
-                    <div><a class="hover:animate-pulse service-btn flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow  w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md"
+                    <div><a class="service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md hover:text-[#135FFF]"
                             href=""><img src="{{asset('/frontend/assets/img/icons/Energy-Cost.svg')}}" class="mr-3 h-10 w-10" alt="icon">
                             Energy Cost</a></div>
-                    <div><a class="hover:animate-pulse service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md"
+                    <div><a class="service-btn lg:mx-auto flex border border-[#F5F8FF] items-center bg-white my-2 text-[#2B313B] grow w-full lg:w-[292px] text-base font-semibold p-[17px] rounded-md hover:text-[#135FFF]"
                             href=""><img src="{{asset('/frontend/assets/img/icons/solar-panels.svg')}}" class="mr-3 h-10 w-10" alt="icon">
                             Solar panels</a></div>
                 </div>

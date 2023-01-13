@@ -1,15 +1,8 @@
 <div>
     <div class="faq mb-3 py-2 border rounded-t-2xl border-[#F5F8FF] ">
-        <a
-            class="mx-3 pt-2 pb-3 border border-b border-[#F5F8FF] mx-auto md:text-base lg:text-2xl text-2xl font-semibold">
-            Rate</button>
-
-
-
+        <div class="mx-3 pt-2 pb-3 border border-b border-[#F5F8FF] mx-auto md:text-base lg:text-2xl text-2xl font-semibold">Rate</div>
             <div class="px-3 items-center font-semibold text- bg-white transition-all opacity-100 hover:opacity-90 py-3">
-                <a data-modal-target="authentication-modal" data-modal-toggle="authentication-modal">
-                    Rate this calculation
-                </a>
+                <a data-modal-target="authentication-modal" data-modal-toggle="authentication-modal">Rate this calculation</a>
 
                 <div class="rating-star flex flex-row items-center">
 

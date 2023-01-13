@@ -35,7 +35,7 @@
                                 <a onclick="showSearch()"
                                     class="flex justify-between transition-all opacity-100 hover:opacity-90"><img
                                         src="{{ asset('/frontend/assets/img/save-icon.svg') }}" alt="icon">
-                                    <span class="text-[#26BA65] text-sm font-semibold ml-1"> Save Search</span> </a>
+                                    <span class="text-[#26BA65] text-sm font-semibold ml-1 cursor-pointer"> Save Search</span> </a>
                                 <div
                                     class="show-search hidden saved-search bg-white h-auto p-4 rounded-xl shadow-md shadow-[0px 2px 20px rgba(69, 130, 220, 0.1)]">
                                     <h3 class="color-[#2B313B] font-semibold text-base mb-2">Saved searches</h3>
@@ -71,7 +71,7 @@
                             Calculate BPM, Calculate VAT, Calculate road tax, Calculate financial</p>
                     </div>
                     <ul id="search_by"
-                        class="hidden absolute  z-10 px-3 top-26 bg-white left-4 pb-3 h-auto w-[95%] text-sm rounded-xl shadow-md shadow-[0px 2px 20px rgba(69, 130, 220, 0.1)] text-[#2B313B]"
+                        class="cursor-pointer hidden absolute z-10 px-3 bottom-[-5px] c bg-white left-4 pb-3 h-auto w-[95%] text-sm rounded-xl shadow-md shadow-[0px 2px 20px rgba(69, 130, 220, 0.1)] text-[#2B313B]"
                         aria-labelledby="dropdownSearchButton">
 
                     </ul>

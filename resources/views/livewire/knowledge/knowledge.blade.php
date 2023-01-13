@@ -11,7 +11,7 @@
                     <div class="img-box w-full sm:w-2/5 order-none mb-6 sm:m-0 sm:order-last">
                         <img src="{{asset('/frontend/assets/img/knowledge-img.svg')}}" class="mx-auto w-full sm:mx-0" alt="image">
                     </div>
-                    <div class="text-content text-center flex flex-col w-2/5 sm:text-left">
+                    <div class="text-content text-center flex flex-col md:w-2/5 sm:text-left">
                         <h1 class="text-[32px] sm:text-xl lg:text-2xl font-semibold mb-8 text-[#2B313B]">We are best Become wiser with our knowledge base</h1>
                         <p class="font-normal text-base text-[#2B313B]">Read reliable and practical information in the field of the Calculation. Let our experts inform you about your Calculation & Compares</p>
                     </div>

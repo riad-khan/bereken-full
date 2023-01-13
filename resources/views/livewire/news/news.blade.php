@@ -26,7 +26,7 @@
                     <h3 class=" text-2xl basis-full sm:basis-1/2 font-semibold">Highlights</h3>
 
 
-                    <div class="t-select no-label w-full sm:w-52">
+                    <div class="no-label w-full sm:w-52">
                         <select id="news"
                             class="bg-white border border-[#F5F8FF] text-[#2B313B] font-semibold text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5">
 
@@ -65,7 +65,7 @@
                                     </button>
                                 </div>
                                 <input type="text" id="default-search"
-                                    class="rounded-md bg-white border-[#F5F8FF] text-[#2B313B] font-normal text-xs focus:ring-blue-500 focus:outline-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full p-2.5 pl-10"
+                                    class="rounded-lg bg-white border border-[#A4BCE6] text-[#6C7A93] font-normal text-xs focus:ring-[#3b82f6] focus:outline-none focus:border-[#3b82f6] block flex-1 min-w-0 w-full p-3.5 pl-10"
                                     placeholder="Search Articles"
                                     name="search"
                                     required>
