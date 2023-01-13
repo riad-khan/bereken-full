@@ -35,6 +35,64 @@
                     
                 </ol>
             </nav>
+
+            <div class="block md:hidden">
+                <!-- search  -->
+                <div class="search-area w-full my-6">
+                    <div class="sm:w-3/4 w-full z-20 relative mx-auto bg-white rounded-2xl shadow">
+                        <div class="p-3">
+                            <div class="flex justify-between items-center search-top">
+                                <h2 class="text-base font-semibold text-[#2B313B]">Search Calculator</h2>
+
+                                <div class="save-search p-2 relative">
+                                    <a onclick="showSearch()"
+                                        class="flex justify-between transition-all opacity-100 hover:opacity-90"><img
+                                            src="{{ asset('/frontend/assets/img/save-icon.svg') }}" alt="icon">
+                                        <span class="text-[#26BA65] text-sm font-semibold ml-1 cursor-pointer"> Save Search</span> </a>
+                                    <div
+                                        class="show-search hidden saved-search bg-white h-auto p-4 rounded-xl shadow-md shadow-[0px 2px 20px rgba(69, 130, 220, 0.1)]">
+                                        <h3 class="color-[#2B313B] font-semibold text-base mb-2">Saved searches</h3>
+                                        <ul id="show-save-list">
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex">
+                                <div class="relative w-full">
+                                    <input type="search" id="search"
+                                        class="block p-2.5 w-full z-20 text-sm text-[#2B313B] bg-white transition-all rounded-md shadow-none outline-none ring-0 border-4 border-[#EFF4FF] focus:ring-[#EFF4FF] focus:outline-none focus:shadow-[#EFF4FF] focus:border-[#EFF4FF] focus:shadow-md"
+                                        placeholder="find your calculation" autocomplete="off" onkeyup="SearchCalculator()" required>
+
+
+
+
+                                    <button type="submit"
+                                        class="absolute p-3 top-0 z-20 right-0 border-[#EFF4FF] border-2 text-sm font-bold text-[#0052FE] bg-[#EFF4FF] rounded-r-md hover:bg-[#EFF4FF] focus:outline-none hover:text-[#0052FE] focus:ring-[#EFF4FF]">
+                                        <svg aria-hidden="true" class="w-5 h-5" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                        </svg>
+                                        <span class="sr-only">Search</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <p class="text-gray-600 text-[10px] font-normal my-2">Ex: Calculate BMI, Calculate inches to cm,
+                                Calculate BPM, Calculate VAT, Calculate road tax, Calculate financial</p>
+                        </div>
+                        <ul id="search_by"
+                            class="cursor-pointer hidden absolute z-10 px-3 bottom-[-5px] c bg-white left-4 pb-3 h-auto w-[95%] text-sm rounded-xl shadow-md shadow-[0px 2px 20px rgba(69, 130, 220, 0.1)] text-[#2B313B]"
+                            aria-labelledby="dropdownSearchButton">
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- search-end -->
+            </div>
+
             <!-- Calculations Start -->
             <div class="services-area w-full py-8">
 
@@ -300,18 +358,19 @@
         <!-- container end -->
     </section>
 
-    <section class="bg-[#F5F8FF] w-full p-4 md:p-4">
+      <!-- contact-us - start -->
+      <section class="bg-[#F5F8FF] w-full p-4 md:p-4">
         <div class="container mx-auto max-w-screen-xl">
             <div class="flex p-6 flex-col items-center ">
                 <div class="content text-center sm:text-left flex-none sm:flex sm:justify-center sm:items-center">
                     <div class="img-box w-full sm:w-2/5 order-none mb-6 sm:m-0 sm:order-last">
-                        <img src="{{asset('/frontend/assets/img/contact-us.svg')}}" class="mx-auto w-full sm:mx-0" alt="image">
+                        <img src="{{asset('frontend/assets/img/contact-us.svg')}}" class="mx-auto w-full sm:mx-0" alt="image">
                     </div>
                     <div class="text-content text-center sm:w-3/5 sm:text-left">
                         <h6 class="text-2xl sm:text-xl lg:text-2xl font-normal mb-8 text-[#2B313B]">We are best reached
                             via WhatsApp and chat Feel free to contact us if you want to know more. We are there today
                             until 18:00.</h6>
-                        <a href="#"  class="outline-btn btn-translate-z flex w-fit bg-[#112954] text-white text-base font-bold py-2.5 px-6 rounded-lg transition-all">Contact Us</a>
+                        <a href="/contact-us"  class="outline-btn btn-translate-z flex w-fit m-auto md:m-0 bg-[#112954] text-white text-base font-bold py-2.5 px-6 rounded-lg transition-all">Contact Us</a>
                     </div>
                 </div>
             </div>

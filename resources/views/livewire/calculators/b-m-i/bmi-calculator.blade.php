@@ -288,30 +288,26 @@
                             </div>
                             <div class="w-full mt-4 lg:mt-0 lg:w-auto social-links text-left lg:text-right">
                                 <h5 class="font-bold text-xs text-black mb-2">Share this Calculation</h5>
-                                <ul class="flex flex-row justify-end">
-                                    <li class="flex ml-2"> <a href="#" class=" ml-2"><span
-                                                class="flex relative">
-                                                <span
-                                                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span><img
-                                                    class=" h-5 w-5"
-                                                    src="{{ asset('frontend/assets/img/social/facebook.svg') }}"
-                                                    alt=""> </span></a></li>
-                                    <li class="flex ml-2"><a href="#" class=" ml-2"><img
-                                                class="blob infinity rounded-full h-5 w-5"
-                                                src="{{ asset('frontend/assets/img/social/twitter.svg') }}"
-                                                alt=""> </a></li>
-                                    <li class="flex ml-2"> <a href="#" class=" ml-2"><span
-                                                class="flex relative">
-                                                <span
-                                                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span><img
-                                                    class="h-5 w-5"
-                                                    src="{{ asset('frontend/assets/img/social/instagram.svg') }}"
-                                                    alt=""></span> </a></li>
-                                    <li class="flex ml-2"><a href="#" class=" ml-2"><img
-                                                class="blob infinity rounded-full h-5 w-5"
-                                                src="{{ asset('frontend/assets/img/social/youtube.svg') }}"
-                                                alt=""> </a></li>
-                                </ul>
+                                <ul class="flex flex-row justify-start md:justify-end">
+                                <li class="flex ml-0 md:ml-2"> <a href="#" class="  ml-0 md:ml-2"><span
+                                            class="flex relative">
+                                            <span
+                                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span><img
+                                                class=" h-5 w-5" src="{{asset('/frontend/assets/img/social/facebook.svg')}}"
+                                                alt=""> </span></a></li>
+                                <li class="flex  ml-0 md:ml-2"><a href="#" class=" ml-2"><img
+                                            class="blob infinity rounded-full h-5 w-5"
+                                            src="{{asset('/frontend/assets/img/social/twitter.svg')}}" alt=""> </a></li>
+                                <li class="flex  ml-0 md:ml-2"> <a href="#" class=" ml-2"><span
+                                            class="flex relative">
+                                            <span
+                                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span><img
+                                                class="h-5 w-5" src="{{asset('/frontend/assets/img/social/instagram.svg')}}"
+                                                alt=""></span> </a></li>
+                                <li class="flex  ml-0 md:ml-2"><a href="#" class=" ml-2"><img
+                                            class="blob infinity rounded-full h-5 w-5"
+                                            src="{{asset('/frontend/assets/img/social/youtube.svg')}}" alt=""> </a></li>
+                            </ul>
                             </div>
                         </div>
                     </div> <!-- info area end -->

@@ -29,10 +29,10 @@
 
               $commaSeperated_category = explode(",",$item->category_name)
              
+            
               
             @endphp
 
-            
             <ul>
                
             
@@ -40,7 +40,7 @@
              
                 <li>
                     <a href="/news-details/{{$item->slug}}-{{$item->id}}"
-                        class="flex p-6 flex-col transition-all items-center hover:bg-[#EBF1FF] border border-white hover:border-[#EBF1FF] rounded-lg hover:shadow md:flex-row w-full bg-white">
+                        class="flex my-2 p-4 md:p-6 flex-col transition-all items-center hover:bg-[#EBF1FF] border border-[#F5F8FF] hover:border-[#EBF1FF] rounded-lg hover:shadow md:flex-row w-full bg-white">
                         <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
                             src="{{$item->thumbnill_image}}" alt="image">
 
@@ -61,18 +61,18 @@
                         </div>
                     </a>
                 </li>
-            </ul>
 
+                </ul>
             @if ($key === 2)
-            <div class="promo-add flex justify-between items-center bg-[#0052FE] p-10 my-4 rounded-xl">
+            
+            <div class="promo-add flex flex-col justify-start lg:flex-row lg:justify-between lg:items-center bg-[#0052FE] p-10 my-4 rounded-xl">
                 <div class="text-left">
                     <h5 class="text-2xl text-bold text-white">Don't you want to miss anything anymore?</h5>
                     <p class="font-normal text-base text-white mt-2">And don't worry, we will send you a handy email no
                         more than once a week.</p>
                 </div>
                 <a href="#"
-                    class="outline-btn btn-translate-z hover:text-[#0052FE] transition-all text-white border bg-white focus:ring-4 focus:outline-none focus:ring-0 font-bold rounded-lg  text-bold px-5 py-2.5 text-center mr-2 mb-2">Subscribe
-                    Now</a>
+                    class="outline-btn btn-translate-z w-[170px] mt-4 lg:mt-0 hover:text-[#0052FE] transition-all text-white border bg-white focus:ring-4 focus:outline-none focus:ring-0 font-bold rounded-lg  text-bold px-5 py-2.5 text-center mr-2 mb-2">Subscribe Now</a>
             </div>
 
             @endif

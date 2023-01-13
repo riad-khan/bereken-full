@@ -23,22 +23,48 @@
                 <!-- left-side-area start -->
 
                 <span class="flex flex-col sm:flex-row justify-between mb-5 items-center">
-                    <h3 class=" text-2xl basis-full sm:basis-1/2 font-semibold">Highlights</h3>
+                    <h3 class="mb-2 md:mb-0 text-2xl basis-full sm:basis-1/2 font-semibold">Highlights</h3>
 
 
                     <div class="no-label w-full sm:w-52">
-                        <select id="news"
-                            class="bg-white border border-[#F5F8FF] text-[#2B313B] font-semibold text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block  p-2.5">
-
-                            <option class="p-3 bg-white border-b border border-[#cccccc] text-xs rounded-lg font-base"
-                                selected>All News</option>
-                            @foreach ($categories as $item)
-                                <option
-                                    class="p-3 bg-white border-b border border-[#cccccc] text-xs rounded-lg font-base"
-                                    data-url="{{'/news/'.$item->slug.'/'.$item->id.''}}">{{ $item->category_name }}</option>
-                            @endforeach
-                        </select>
+                        <div class="select" id="news">
+                            <div class="selectBtn" data-type="firstOption">All News</div>
+                                <div class="selectDropdown">
+                                    <div class="option" data-type="firstOption">All News</div>
+                                    @foreach ($categories as $item)
+                                    <div class="option" data-type="secondOption" data-url="{{'/news/'.$item->slug.'/'.$item->id.''}}">
+                                        {{ $item->category_name }}                                        
+                                    </div>
+                                    @endforeach
+                                </div>
+                        </div>
                     </div>
+
+                    
+                    <div class="block md:hidden search-bar my-3 w-full">
+                        <form action="{{url('/search-news-submit')}}" method="post">
+                            @csrf
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                    <button type="submit">
+                                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                                            fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <input type="text" id="default-search"
+                                    class="rounded-lg bg-white border border-[#A4BCE6] text-[#6C7A93] font-normal text-xs focus:ring-[#3b82f6] focus:outline-none focus:border-[#3b82f6] block flex-1 min-w-0 w-full p-3.5 pl-10"
+                                    placeholder="Search Articles"
+                                    name="search"
+                                    required>
+                            </div>
+                        </form>
+
+                    </div>
+
                 </span>
 
                 <livewire:components.news.highlights category="all" />
@@ -50,7 +76,7 @@
             <div class="side-bar basis-full md:basis-4/12">
                 <div class="inner-area ml-1 lg:ml-4 p-2 md:p-0">
 
-                    <div class="search-bar mb-3">
+                    <div class="hidden md:block  search-bar mb-3">
                         <form action="{{url('/search-news-submit')}}" method="post">
                             @csrf
                             <div class="relative">

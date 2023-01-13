@@ -4,16 +4,16 @@
     <meta name="keywords" content="{{$seo_data[0]->seo_keywords}}">
 @endsection
 <div>
-    <section class="bg-[#F5F8FF] w-full p-4 md:p-4">
+    <section class="bg-[#F5F8FF] mt-12 md:mt-0 w-full p-4 md:p-4">
         <div class="container mx-auto max-w-screen-xl">
             <div class="flex p-6 flex-col items-center ">
-                <div class="content text-center sm:text-left flex-none sm:flex sm:justify-between sm:items-center">
-                    <div class="img-box w-full sm:w-2/5 order-none mb-6 sm:m-0 sm:order-last">
+                <div class="content text-left flex-none sm:flex sm:justify-between sm:items-center">
+                    <div class="img-box w-full hidden md:flex md:w-2/5 order-none mb-6 sm:m-0 sm:order-last">
                         <img src="{{asset('/frontend/assets/img/knowledge-img.svg')}}" class="mx-auto w-full sm:mx-0" alt="image">
                     </div>
-                    <div class="text-content text-center flex flex-col md:w-2/5 sm:text-left">
-                        <h1 class="text-[32px] sm:text-xl lg:text-2xl font-semibold mb-8 text-[#2B313B]">We are best Become wiser with our knowledge base</h1>
-                        <p class="font-normal text-base text-[#2B313B]">Read reliable and practical information in the field of the Calculation. Let our experts inform you about your Calculation & Compares</p>
+                    <div class="text-content flex flex-col md:w-2/5 text-left">
+                        <h1 class="text-[32px] leading-9 sm:text-xl lg:text-2xl font-semibold mb-4 md:mb-8 text-[#2B313B]">Become wiser with our knowledge base</h1>
+                        <p class="font-normal text-base text-[#2B313B] underline">Read reliable and practical information in the field of the Calculation. Let our experts inform you about your Calculation & Compares</p>
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@
         
     
 
-    <section class="slider-c bg-white pt-20 p-4 md:pt-12 md:p-12 w-full items-center mx-auto">
+    <section class="slider-c bg-white pt-12 p-4 md:p-12 w-full items-center mx-auto">
         <div class="container mx-auto max-w-screen-xl">
             <div class="sec-title flex items-center justify-between">
                 <h3 class="mb-3 text-2xl font-semibold">{{$row->category_name}}</h3>

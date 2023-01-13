@@ -43,8 +43,8 @@
                     <form id="vat_form" method="post" data-parsley-validate="" action="{{url('/calculate-vat')}}" enctype="multipart/form-data">
                         @csrf
                         <!-- form start -->
-                        <div class="grid gap-4 mb-6 md:grid-cols-2">
-                            <div> <span class="flex justify-between">
+                        <div class="grid gap-4 mb-4 md:mb-6 md:grid-cols-2">
+                            <div class="order-1"> <span class="flex justify-between">
                                     <label for="amount"
                                         class="block mb-2  text-xs font-normal text-[#2B313B]">{{$details[0]->amount_label}}</label>
 
@@ -108,15 +108,15 @@
                                 </span>
                                 <div class="flex">
                                     <span
-                                        class="parent-span inline-flex items-center px-3 bg-white text-[#2B313B] font-semibold text-xs order-[#F5F8FF] border focus:ring-[3b82f6] rounded-l-lg">
+                                        class="parent-span inline-flex items-center px-3 bg-white text-[#000] font-semibold text-xs border-[#A4BCE6] border focus:ring-none rounded-l-lg">
                                         €
                                     </span>
                                     <input type="text" id="amount" name="amount"
-                                        class="label-span rounded-none rounded-r-lg bg-white border-[#F5F8FF] text-[#2B313B] font-normal text-xs border focus:ring-none focus:outline-none focus:border-[#3b82f6] flex-1 min-w-0 w-full p-2.5"
+                                        class="label-span rounded-none rounded-r-lg bg-white border-[#A4BCE6] text-[#6C7A93] font-normal text-xs border focus:ring-none focus:outline-none focus:border-[#3b82f6] flex-1 min-w-0 w-full p-3.5"
                                         placeholder="" data-parsley-type='digits' required>
                                 </div>
                             </div>
-                            <div>
+                            <div  class="order-3 md:order-2">
                                 <span class="flex justify-between">
                                     <label for="weight" class="block mb-2  text-xs font-normal text-[#2B313B]">{{$details[0]->convert_label}}</label>
 
@@ -178,8 +178,8 @@
                                     </div>
                                     <!--Code Block for white tooltip ends-->
                                 </span>
-                                <div class="flex flex-row h-8 items-center justify-between">
-                                    <div class="flex items-center mr-4 radio-cu">
+                                <div class="grid gap-2 grid-cols-2 mt-0 md:mt-1 md:grid-cols-1 h-8 items-center">
+                                    <div class="flex items-center radio-cu">
                                         <input id="inline-radio" checked type="radio" value="include"
                                             name="vatStatus"
                                             class="w-3 h-3 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2 ">
@@ -199,7 +199,7 @@
 
                             </div>
 
-                            <div class="t-select">
+                            <div class="t-select order-2 md:order-3">
                                 <span class="flex justify-between">
                                     <label for="rate" class="block mb-2 text-xs font-normal text-[#2B313B]">{{$details[0]->rate_label}}</label>
                                     <!--Code Block for white tooltip starts-->
@@ -268,10 +268,12 @@
                                     <option value="9">9%% NL Reduced rate</option>
                                 </select>
                             </div>
-                            <div class="flex items-end">
+                            <div class="block md:flex md:items-end order-4">
                                 <button type="submit"
                                     class="outline-btn btn-translate-z flex bg-[#112954] justify-center text-white font-bold rounded-lg text-xs w-full px-5 py-4 text-center">{{$details[0]->button_text}}</button>
-
+                                    <p class="my-4 block md:hidden sm:ml-6 text-[10px] text-[#6C7A93] font-normal">
+                                    <i>*The body mass index (BMI) calculator estimates the amount of body fat a person has in relation to age, height, and weight. </i>
+                                </p>
                             </div>
                         </div>
                     </form>
@@ -293,23 +295,23 @@
                         </div>
                         <div class="w-full mt-4 lg:mt-0 lg:w-auto social-links text-left lg:text-right">
                             <h5 class="font-bold text-xs text-black mb-2">Share this Calculation</h5>
-                            <ul class="flex flex-row justify-end">
-                                <li class="flex ml-2"> <a href="#" class=" ml-2"><span
+                            <ul class="flex flex-row justify-start md:justify-end">
+                                <li class="flex ml-0 md:ml-2"> <a href="#" class="  ml-0 md:ml-2"><span
                                             class="flex relative">
                                             <span
                                                 class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span><img
                                                 class=" h-5 w-5" src="{{asset('/frontend/assets/img/social/facebook.svg')}}"
                                                 alt=""> </span></a></li>
-                                <li class="flex ml-2"><a href="#" class=" ml-2"><img
+                                <li class="flex  ml-0 md:ml-2"><a href="#" class=" ml-2"><img
                                             class="blob infinity rounded-full h-5 w-5"
                                             src="{{asset('/frontend/assets/img/social/twitter.svg')}}" alt=""> </a></li>
-                                <li class="flex ml-2"> <a href="#" class=" ml-2"><span
+                                <li class="flex  ml-0 md:ml-2"> <a href="#" class=" ml-2"><span
                                             class="flex relative">
                                             <span
                                                 class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span><img
                                                 class="h-5 w-5" src="{{asset('/frontend/assets/img/social/instagram.svg')}}"
                                                 alt=""></span> </a></li>
-                                <li class="flex ml-2"><a href="#" class=" ml-2"><img
+                                <li class="flex  ml-0 md:ml-2"><a href="#" class=" ml-2"><img
                                             class="blob infinity rounded-full h-5 w-5"
                                             src="{{asset('/frontend/assets/img/social/youtube.svg')}}" alt=""> </a></li>
                             </ul>

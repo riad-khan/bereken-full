@@ -153,6 +153,94 @@ html, body {
 .t-select.no-label .select-selected:after {
     top: 10px;
 }
+
+/*custom news select start*/
+.select {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2B313B;
+    position: relative;
+  }
+  .select .selectBtn {
+    padding: 10px;
+    border: 1px solid #0052FE;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2B313B;
+    cursor: pointer;
+    position: relative;
+  }
+  .select .selectBtn:after {
+    content: "";
+    position: absolute;
+    top: 45%;
+    right: 15px;
+    width: 6px;
+    height: 6px;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+            transform: translateY(-50%) rotate(45deg);
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transition: 0.2s ease;
+  }
+  .select .selectBtn.toggle {
+    border-radius: 3px 3px 0 0;
+  }
+  .select .selectBtn.toggle:after {
+    -webkit-transform: translateY(-50%) rotate(-135deg);
+            transform: translateY(-50%) rotate(-135deg);
+  }
+  .select .selectDropdown {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+    overflow: hidden;
+    background: var(--bg1);
+    border-top: 1px solid #eee;
+    z-index: 9;
+    background: #fff;
+    -webkit-transform: scale(1, 0);
+            transform: scale(1, 0);
+    -webkit-transform-origin: top center;
+            transform-origin: top center;
+    visibility: hidden;
+    transition: 0.2s ease;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  }
+  .select .selectDropdown .option {
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  .select .selectDropdown .option:hover {
+    background: #f8f8f8;
+  }
+  .select .selectDropdown.toggle {
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #0052FE;
+    cursor: pointer;
+    border-radius: 10px;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 9!important;
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    transition: all 300ms ease-in-out;
+    padding: 3px;
+    margin-top: 10px;
+    visibility: visible;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+/*custom news select end*/
+
 /* nav icon start */
 
 

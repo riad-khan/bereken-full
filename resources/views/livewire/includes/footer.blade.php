@@ -1,8 +1,8 @@
 <footer class="p-4 md:p-12 bg-white sm:p-6">
     <div class="container mx-auto max-w-screen-xl">
         <div class="md:flex md:flex md:flex-row md:justify-between flex-none">
-            <div class="mb-6 md:mb-0 md:basis-1/3 basis-full">
-                <a href="#" class="flex items-center">
+            <div class="mb-6 text-center md:text-left md:mb-0 md:basis-1/3 basis-full">
+                <a href="#" class="flex justify-center md:justify-start items-center">
                     <img src="{{ asset('frontend/assets/img/full-logo.svg') }}" class="mr-3 h-9" alt="FlowBite Logo" />
                 </a>
                 <p class="sm:space-y-6 py-2 sm:py-8 text-xs font-normal leading-5 text-[#6C7A93] sm:pr-9">
@@ -10,8 +10,7 @@
                     service to you in your calculations.
                 </p>
             </div>
-            <div
-                class="mb-6 md:mb-0 grid grid-cols-2 gap-2 sm:justify-between sm:flex sm:basis-1/2 md:basis-2/3 sm:flex-wrap basis-full">
+            <div class="m-auto mb-6 md:mb-0 w-[80%] grid grid-cols-2 gap-2 sm:justify-between sm:flex sm:basis-1/2 md:basis-2/3 sm:flex-wrap basis-full">
                 <div class="mb-6 md:mb-0">
                     <h2 class="mb-6 text-base font-semibold text-[#2B313B] ">General</h2>
                     <ul class="text-xs font-normal leading-5 text-[#6C7A93]">
@@ -125,9 +124,8 @@
             </div>
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-        <div class="sm:flex sm:items-center sm:justify-between">
-            <span class="font-semibold text-[#2B313B] sm:text-center">© 2022
-                Bereken.NL All rights reserved
+        <div class="flex justify-center sm:items-center sm:justify-between">
+            <span class="font-semibold text-[#2B313B] sm:text-center">© 2022 Bereken.NL All rights reserved
             </span>
         </div>
     </div>
