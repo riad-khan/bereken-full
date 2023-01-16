@@ -2,8 +2,8 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Jan 11, 2023 at 03:14 PM
+-- Host: 127.0.0.1
+-- Generation Time: Jan 16, 2023 at 06:40 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.1.12
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `berken_nl`
+-- Database: `bereken_nl`
 --
 
 -- --------------------------------------------------------
@@ -202,6 +202,56 @@ INSERT INTO `contacts` (`id`, `salutation`, `email`, `name`, `company`, `questio
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `dropdown_categories`
+--
+
+CREATE TABLE `dropdown_categories` (
+  `id` int(11) NOT NULL,
+  `name` varchar(500) NOT NULL,
+  `status` varchar(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `dropdown_categories`
+--
+
+INSERT INTO `dropdown_categories` (`id`, `name`, `status`) VALUES
+(1, 'Background Information', '1'),
+(2, 'What cost', '1'),
+(3, 'News Blog', '1'),
+(4, 'Business/B2B information', '1'),
+(5, 'Current Calculations', NULL),
+(6, 'Service Pages', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dropdown_menus`
+--
+
+CREATE TABLE `dropdown_menus` (
+  `id` int(11) NOT NULL,
+  `cat_id` int(11) NOT NULL,
+  `name` varchar(300) NOT NULL,
+  `url` varchar(1500) NOT NULL,
+  `display_order` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `dropdown_menus`
+--
+
+INSERT INTO `dropdown_menus` (`id`, `cat_id`, `name`, `url`, `display_order`) VALUES
+(29, 1, 'menu1', '/', '0'),
+(30, 2, 'menu2', '/', '0'),
+(31, 3, 'menu3', '/', '0'),
+(32, 4, 'menu 4', '/', '0'),
+(33, 5, 'menu', '/', '0'),
+(34, 6, 'Home', '/', '0');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `failed_jobs`
 --
 
@@ -263,7 +313,7 @@ CREATE TABLE `featured_calculators` (
 INSERT INTO `featured_calculators` (`id`, `main_calculator`, `featured_calculator`, `sort_order`, `created_at`, `updated_at`) VALUES
 (3, 2, '1', '0', NULL, NULL),
 (7, 2, '5', '1', NULL, NULL),
-(8, 1, '2', '0', NULL, NULL);
+(9, 1, '5', '0', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -675,6 +725,18 @@ ALTER TABLE `contacts`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `dropdown_categories`
+--
+ALTER TABLE `dropdown_categories`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `dropdown_menus`
+--
+ALTER TABLE `dropdown_menus`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
@@ -828,6 +890,18 @@ ALTER TABLE `contacts`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
+-- AUTO_INCREMENT for table `dropdown_categories`
+--
+ALTER TABLE `dropdown_categories`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `dropdown_menus`
+--
+ALTER TABLE `dropdown_menus`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+
+--
 -- AUTO_INCREMENT for table `failed_jobs`
 --
 ALTER TABLE `failed_jobs`
@@ -843,7 +917,7 @@ ALTER TABLE `faqs`
 -- AUTO_INCREMENT for table `featured_calculators`
 --
 ALTER TABLE `featured_calculators`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `home_reviews`

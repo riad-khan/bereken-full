@@ -75,7 +75,12 @@
                             </tbody>
                         </table>
 
-
+                        <div class="form-check ml-3 col-sm-12">
+                            <input class="form-check-input" name="status[]" type="checkbox" onchange="listSubmit(this.value)" value="2" id="calculators">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Section Active
+                            </label>
+                        </div>
 
 
                         </div>
@@ -83,7 +88,7 @@
                 </div>
                     <div class="col-md-4">
                         <div class="card">
-                            <div  id="section1" class="card-body row">
+                            <div class="card-body row">
 
                                 @php
                                     $data = \Illuminate\Support\Facades\DB::table('dropdown_categories')->where('id','=',2)->get();
@@ -113,8 +118,63 @@
 
                                     @foreach($menu2 as $item)
                                         <tr>
-                                            <td><input type="text" name="menu_name2[]" class="form-control" autocomplete="off"></td>
-                                            <td><input type="text" name="menu_link2[]" class="form-control" autocomplete="off"></td>
+                                            <td><input type="text" name="menu_name2[]" value="{{$item->name}}" class="form-control" autocomplete="off"></td>
+                                            <input type="hidden" name="id2[]" value="{{$item->id}}">
+                                            <td><input type="text" name="menu_link2[]" value="{{$item->url}}" class="form-control" autocomplete="off"></td>
+                                            <td> </td>
+                                        </tr>
+
+                                    @endforeach
+                                    </tbody>
+                                </table>
+
+                                <div class="form-check ml-3 col-sm-12">
+                                    <input class="form-check-input" name="status[]" type="checkbox" onchange="listSubmit(this.value)" value="2" id="calculators">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Section Active
+                                    </label>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+
+                        <div class="card">
+                            <div class="card-body row">
+
+                                @php
+                                    $data = \Illuminate\Support\Facades\DB::table('dropdown_categories')->where('id','=',3)->get();
+                                @endphp
+
+                                <div class="form-group col-sm-12" element="div" bp-field-wrapper="true"
+                                     bp-field-name="title" bp-field-type="text">
+                                    <label>Title</label>
+                                    <input type="text" name="title[]" value="{{$data[0]->name}}" class="form-control" required>
+
+                                </div>
+                                <input type="hidden" name="category_id[]" value="{{$data[0]->id}}" class="form-control" >
+
+                                <table class="table table-bordered">
+                                    <thead>
+                                    <tr>
+
+                                        <th scope="col">Menu Name</th>
+                                        <th scope="col">Link</th>
+                                        <th scope="col"><i id="add_menu3" class="la la-plus-circle"style="font-size: 28px;"></i></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="section3">
+                                    @php
+                                        $menu2 = \Illuminate\Support\Facades\DB::table('dropdown_menus')->where('cat_id','=',3)->get();
+                                    @endphp
+
+                                    @foreach($menu2 as $item)
+                                        <tr>
+                                            <td><input type="text" name="menu_name3[]" value="{{$item->name}}" class="form-control" autocomplete="off"></td>
+                                            <input type="hidden" name="id3[]" value="{{$item->id}}">
+                                            <td><input type="text" name="menu_link3[]" value="{{$item->url}}" class="form-control" autocomplete="off"></td>
                                             <td> </td>
                                         </tr>
 
@@ -123,14 +183,182 @@
                                 </table>
 
 
-
+                                <div class="form-check ml-3 col-sm-12">
+                                    <input class="form-check-input" name="status[]" type="checkbox" onchange="listSubmit(this.value)" value="2" id="calculators">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Section Active
+                                    </label>
+                                </div>
 
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        one
+
+                <div class="col-md-4">
+
+                    <div class="card">
+                        <div class="card-body row">
+
+                            @php
+                                $data = \Illuminate\Support\Facades\DB::table('dropdown_categories')->where('id','=',4)->get();
+                            @endphp
+
+                            <div class="form-group col-sm-12" element="div" bp-field-wrapper="true"
+                                 bp-field-name="title" bp-field-type="text">
+                                <label>Title</label>
+                                <input type="text" name="title[]" value="{{$data[0]->name}}" class="form-control" required>
+
+                            </div>
+                            <input type="hidden" name="category_id[]" value="{{$data[0]->id}}" class="form-control" >
+
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+
+                                    <th scope="col">Menu Name</th>
+                                    <th scope="col">Link</th>
+                                    <th scope="col"><i id="add_menu4" class="la la-plus-circle"style="font-size: 28px;"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="section4">
+                                @php
+                                    $menu2 = \Illuminate\Support\Facades\DB::table('dropdown_menus')->where('cat_id','=',4)->get();
+                                @endphp
+
+                                @foreach($menu2 as $item)
+                                    <tr>
+                                        <td><input type="text" name="menu_name4[]" value="{{$item->name}}" class="form-control" autocomplete="off"></td>
+                                        <input type="hidden" name="id4[]" value="{{$item->id}}">
+                                        <td><input type="text" name="menu_link4[]" value="{{$item->url}}" class="form-control" autocomplete="off"></td>
+                                        <td> </td>
+                                    </tr>
+
+                                @endforeach
+                                </tbody>
+                            </table>
+
+                            <div class="form-check ml-3 col-sm-12">
+                                <input class="form-check-input" name="status[]" type="checkbox" onchange="listSubmit(this.value)" value="2" id="calculators">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Section Active
+                                </label>
+                            </div>
+
+
+                        </div>
                     </div>
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="card">
+                        <div class="card-body row">
+
+                            @php
+                                $data = \Illuminate\Support\Facades\DB::table('dropdown_categories')->where('id','=',5)->get();
+                            @endphp
+
+                            <div class="form-group col-sm-12" element="div" bp-field-wrapper="true"
+                                 bp-field-name="title" bp-field-type="text">
+                                <label>Title</label>
+                                <input type="text" name="title[]" value="{{$data[0]->name}}" class="form-control" required>
+
+                            </div>
+                            <input type="hidden" name="category_id[]" value="{{$data[0]->id}}" class="form-control" >
+
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+
+                                    <th scope="col">Menu Name</th>
+                                    <th scope="col">Link</th>
+                                    <th scope="col"><i id="add_menu5" class="la la-plus-circle"style="font-size: 28px;"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="section5">
+                                @php
+                                    $menu2 = \Illuminate\Support\Facades\DB::table('dropdown_menus')->where('cat_id','=',5)->get();
+                                @endphp
+
+                                @foreach($menu2 as $item)
+                                    <tr>
+                                        <td><input type="text" name="menu_name5[]" value="{{$item->name}}" class="form-control" autocomplete="off"></td>
+                                        <input type="hidden" name="id5[]" value="{{$item->id}}">
+                                        <td><input type="text" name="menu_link5[]" value="{{$item->url}}" class="form-control" autocomplete="off"></td>
+                                        <td> </td>
+                                    </tr>
+
+                                @endforeach
+                                </tbody>
+                            </table>
+
+                            <div class="form-check ml-3 col-sm-12">
+                                <input class="form-check-input" name="status[]" type="checkbox" onchange="listSubmit(this.value)" value="2" id="calculators">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Section Active
+                                </label>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+
+                    <div class="card">
+                        <div class="card-body row">
+
+                            @php
+                                $data = \Illuminate\Support\Facades\DB::table('dropdown_categories')->where('id','=',6)->get();
+                            @endphp
+
+                            <div class="form-group col-sm-12" element="div" bp-field-wrapper="true"
+                                 bp-field-name="title" bp-field-type="text">
+                                <label>Title</label>
+                                <input type="text" name="title[]" value="{{$data[0]->name}}" class="form-control" required>
+
+                            </div>
+                            <input type="hidden" name="category_id[]" value="{{$data[0]->id}}" class="form-control" >
+
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+
+                                    <th scope="col">Menu Name</th>
+                                    <th scope="col">Link</th>
+                                    <th scope="col"><i id="add_menu6" class="la la-plus-circle"style="font-size: 28px;"></i></th>
+                                </tr>
+                                </thead>
+                                <tbody id="section6">
+                                @php
+                                    $menu2 = \Illuminate\Support\Facades\DB::table('dropdown_menus')->where('cat_id','=',6)->get();
+                                @endphp
+
+                                @foreach($menu2 as $item)
+                                    <tr>
+                                        <td><input type="text" name="menu_name6[]" value="{{$item->name}}" class="form-control" autocomplete="off"></td>
+                                        <input type="hidden" name="id6[]" value="{{$item->id}}">
+                                        <td><input type="text" name="menu_link6[]" value="{{$item->url}}" class="form-control" autocomplete="off"></td>
+                                        <td> </td>
+                                    </tr>
+
+                                @endforeach
+                                </tbody>
+                            </table>
+
+                            <div class="form-check ml-3 col-sm-12">
+                                <input class="form-check-input" name="status[]" type="checkbox" onchange="listSubmit(this.value)" value="2" id="calculators">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                   Section Active
+                                </label>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -156,6 +384,7 @@
                 html +='<tr>';
                 html +=' <td><input type="text" name="menu_name1[]" class="form-control" autocomplete="off"></td>';
                 html += '<td><input type="text" name="menu_link1[]" class="form-control" autocomplete="off"></td>';
+                html += '<input type="hidden" name="id[]" value="0">'
                 html +='<td> <i id="remove_menu" class="la la-minus-circle"style="font-size: 28px;"></i></td>';
                 html += '</tr>';
 
@@ -177,7 +406,8 @@
                 var html = "";
                 html +='<tr>';
                 html +=' <td><input type="text" name="menu_name2[]" class="form-control" autocomplete="off"></td>';
-                html += '<td><input type="text" name="menu_link2  []" class="form-control" autocomplete="off"></td>';
+                html += '<td><input type="text" name="menu_link2[]" class="form-control" autocomplete="off"></td>';
+                html += '<input type="hidden" name="id2[]" value="0">'
                 html +='<td> <i id="remove_menu2" class="la la-minus-circle"style="font-size: 28px;"></i></td>';
                 html += '</tr>';
 
@@ -188,6 +418,98 @@
         })
 
         $(document).on('click','#remove_menu2',function (){
+            $(this).closest('tr').remove();
+        })
+
+        //section 3
+
+        $(document).ready(function(){
+            $("#add_menu3").on('click',function (){
+
+                var html = "";
+                html +='<tr>';
+                html +=' <td><input type="text" name="menu_name3[]" class="form-control" autocomplete="off"></td>';
+                html += '<td><input type="text" name="menu_link3[]" class="form-control" autocomplete="off"></td>';
+                html += '<input type="hidden" name="id3[]" value="0">'
+                html +='<td> <i id="remove_menu3" class="la la-minus-circle"style="font-size: 28px;"></i></td>';
+                html += '</tr>';
+
+                $('#section3').append(html);
+
+
+            })
+        })
+
+        $(document).on('click','#remove_menu3',function (){
+            $(this).closest('tr').remove();
+        })
+
+        //section 4
+
+        $(document).ready(function(){
+            $("#add_menu4").on('click',function (){
+
+                var html = "";
+                html +='<tr>';
+                html +=' <td><input type="text" name="menu_name4[]" class="form-control" autocomplete="off"></td>';
+                html += '<td><input type="text" name="menu_link4[]" class="form-control" autocomplete="off"></td>';
+                html += '<input type="hidden" name="id4[]" value="0">'
+                html +='<td> <i id="remove_menu4" class="la la-minus-circle"style="font-size: 28px;"></i></td>';
+                html += '</tr>';
+
+                $('#section4').append(html);
+
+
+            })
+        })
+
+        $(document).on('click','#remove_menu4',function (){
+            $(this).closest('tr').remove();
+        })
+
+        //section 5
+
+        $(document).ready(function(){
+            $("#add_menu5").on('click',function (){
+
+                var html = "";
+                html +='<tr>';
+                html +=' <td><input type="text" name="menu_name5[]" class="form-control" autocomplete="off"></td>';
+                html += '<td><input type="text" name="menu_link5[]" class="form-control" autocomplete="off"></td>';
+                html += '<input type="hidden" name="id5[]" value="0">'
+                html +='<td> <i id="remove_menu5" class="la la-minus-circle"style="font-size: 28px;"></i></td>';
+                html += '</tr>';
+
+                $('#section5').append(html);
+
+
+            })
+        })
+
+        $(document).on('click','#remove_menu5',function (){
+            $(this).closest('tr').remove();
+        })
+
+        //section 6
+
+        $(document).ready(function(){
+            $("#add_menu6").on('click',function (){
+
+                var html = "";
+                html +='<tr>';
+                html +=' <td><input type="text" name="menu_name6[]" class="form-control" autocomplete="off"></td>';
+                html += '<td><input type="text" name="menu_link6[]" class="form-control" autocomplete="off"></td>';
+                html += '<input type="hidden" name="id6[]" value="0">'
+                html +='<td> <i id="remove_menu6" class="la la-minus-circle"style="font-size: 28px;"></i></td>';
+                html += '</tr>';
+
+                $('#section6').append(html);
+
+
+            })
+        })
+
+        $(document).on('click','#remove_menu6',function (){
             $(this).closest('tr').remove();
         })
     </script>
