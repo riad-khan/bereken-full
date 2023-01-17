@@ -70,6 +70,9 @@
                 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('accurates') }}"><i
                             class="nav-icon la la-question"></i>
                         Accurates</a></li>
+                        <li class="nav-item"><a class="nav-link" href=""><i
+                            class="nav-icon la la-question"></i>
+                        Popular sections</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ backpack_url('home-reviews') }}"><i
                             class="nav-icon la la-question"></i> Home reviews</a></li>
             </ul>

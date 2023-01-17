@@ -27,3 +27,4 @@ Route::get('/getFaq',[\App\Http\Controllers\Admin\BmiCrudController::class,'getB
 Route::get('/getBmiResult',[\App\Http\Controllers\Admin\BmiCrudController::class,'getResultsData']);
 Route::post('/search-calculator',[\App\Http\Controllers\Frontend\SearchController::class,'searchCalculator']);
 Route::post('/calculator-ratings',[\App\Http\Controllers\Frontend\CalculatorRatings::class,'calculator_ratings']);
+Route::get('/calculator-list',[\App\Http\Controllers\Admin\PopulerCalculator::class,'calculator_list']);

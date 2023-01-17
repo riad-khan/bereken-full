@@ -36,6 +36,7 @@ Route::group(['prefix' => 'admin',
     Route::get('/bmi/create-results',[\App\Http\Controllers\Admin\BmiCrudController::class,'create_result']);
     Route::get('dropdown-settings',[\App\Http\Controllers\Admin\dropdownSettingsController::class,'edit']);
     Route::post('store-menus',[\App\Http\Controllers\Admin\dropdownSettingsController::class,'store']);
+    Route::get('/populer-calculators',[\App\Http\Controllers\Admin\PopulerCalculator::class,'index']);
 });
 
 Route::get('/', \App\Http\Livewire\Home::class);
