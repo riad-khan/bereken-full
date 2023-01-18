@@ -32,7 +32,7 @@
                                 <div class="selectDropdown">
                                     <div class="option" data-type="firstOption">All News</div>
                                     @foreach ($categories as $item)
-                                    <div class="option" data-type="secondOption" data-url="{{'/news/'.$item->slug.'/'.$item->id.''}}">
+                                    <div class="option" data-type="secondOption" onclick="Redirect(this)" data-url="{{'/news/'.$item->slug.'/'.$item->id.''}}">
                                         {{ $item->category_name }}                                        
                                     </div>
                                     @endforeach
@@ -229,6 +229,11 @@
                 }
             };
         };
+
+        function Redirect(val){
+            let link = val.getAttribute('data-url')
+            location.href = link;
+        }
     </script>
 
 

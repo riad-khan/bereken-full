@@ -81,3 +81,5 @@
     </ul>
 </li>
 
+
+<li class="nav-item"><a class="nav-link" href="{{ backpack_url('contact-info') }}"><i class="nav-icon la la-th-list"></i> Contact infos</a></li>

@@ -28,3 +28,7 @@ Route::get('/getBmiResult',[\App\Http\Controllers\Admin\BmiCrudController::class
 Route::post('/search-calculator',[\App\Http\Controllers\Frontend\SearchController::class,'searchCalculator']);
 Route::post('/calculator-ratings',[\App\Http\Controllers\Frontend\CalculatorRatings::class,'calculator_ratings']);
 Route::get('/calculator-list',[\App\Http\Controllers\Admin\PopulerCalculator::class,'calculator_list']);
+Route::post('/populerCalculator-submit',[\App\Http\Controllers\Admin\PopulerCalculator::class,'insert_populer']);
+Route::get('/populer-list',[\App\Http\Controllers\Admin\PopulerCalculator::class,'get_populer_calculators']);
+Route::get('/delete/populer-list/{id}',[\App\Http\Controllers\Admin\PopulerCalculator::class,'delete_populer']);
+Route::post('/update-order',[\App\Http\Controllers\Admin\PopulerCalculator::class,'updateOrder']);
