@@ -8,7 +8,9 @@
         <div class="container mx-auto max-w-screen-xl">
             <!-- container start -->
             <div class="section-title text-center ">
-                <h1 class="text-[32px] font-semibold text-[#2B313B] p-4 sm:pb-6  sm:pt-4">VAT Calculator</h1>
+                <h1 class="flex justify-center items-center text-[32px] font-semibold text-[#2B313B] p-4 sm:pb-6  sm:pt-4">VAT Calculator <svg class="ml-4" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0.799805 3.99999C0.799805 2.23268 2.23249 0.799988 3.9998 0.799988H19.9998C21.7671 0.799988 23.1998 2.23268 23.1998 3.99999V20C23.1998 21.7673 21.7671 23.2 19.9998 23.2H3.9998C2.23249 23.2 0.799805 21.7673 0.799805 20V3.99999ZM18.3998 5.59999H5.5998V18.4L11.9998 15.2L18.3998 18.4V5.59999Z" fill="#112954"/>
+</svg></h1>
             </div>
             <nav class="flex justify-center" aria-label="Breadcrumb">
                 <ol class="inline-flex items-center space-x-1 md:space-x-3">
@@ -108,11 +110,11 @@
                                 </span>
                                 <div class="flex">
                                     <span
-                                        class="parent-span inline-flex items-center px-3 bg-white text-[#000] font-semibold text-xs border-[#A4BCE6] border focus:ring-none rounded-l-lg">
+                                        class="parent-span inline-flex items-center px-3 bg-white text-[#000] font-semibold text-xs border-[#A4BCE6] border focus:ring-none rounded-l-md">
                                         €
                                     </span>
                                     <input type="text" id="amount" name="amount"
-                                        class="label-span rounded-none rounded-r-lg bg-white border-[#A4BCE6] text-[#6C7A93] font-normal text-xs border focus:ring-none focus:outline-none focus:border-[#3b82f6] flex-1 min-w-0 w-full p-3.5"
+                                        class="label-span rounded-none rounded-r-lg bg-white border-[#A4BCE6] text-[#6C7A93] font-normal text-xs border focus:ring-none focus:outline-none focus:border-[#3b82f6] flex-1 min-w-0 w-full p-3"
                                         placeholder="" data-parsley-type='digits' required>
                                 </div>
                             </div>
