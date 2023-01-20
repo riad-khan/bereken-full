@@ -71,7 +71,7 @@
                             Calculate BPM, Calculate VAT, Calculate road tax, Calculate financial</p>
                     </div>
                     <ul id="search_by"
-                        class="cursor-pointer hidden absolute z-10 px-3 bottom-[-5px] c bg-white left-4 pb-3 h-auto w-[95%] text-sm rounded-xl shadow-md shadow-[0px 2px 20px rgba(69, 130, 220, 0.1)] text-[#2B313B]"
+                        class="cursor-pointer hidden absolute z-10 px-3 bottom-[-35px] c bg-white left-4 pb-3 h-auto w-[95%] text-sm rounded-xl shadow-md shadow-[0px 2px 20px rgba(69, 130, 220, 0.1)] text-[#2B313B]"
                         aria-labelledby="dropdownSearchButton">
 
                     </ul>
@@ -130,13 +130,13 @@
             show = !show;
             let showElement = document.getElementsByClassName('show-search');
           if(show === true){
-            
+
             showElement[0].classList.remove('hidden');
 
             let saved_search = JSON.parse(localStorage["saved_search"]);
                 let li='' ;
             saved_search.map((item, i) => {
-    
+
                    li +='<li class="color-[#2B313B] font-normal text-base"><span>' + item +
                     ' <button onclick="removeItem(' + i +
                     ')"> <img src="{{ asset('/frontend/assets/img/close-white.svg') }}" alt="icon"></button></span></li>'
@@ -166,7 +166,7 @@
                 console.log(true);
                }
 
-               
+
             }
 
         }
