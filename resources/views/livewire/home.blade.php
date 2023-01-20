@@ -71,7 +71,7 @@
                             Calculate BPM, Calculate VAT, Calculate road tax, Calculate financial</p>
                     </div>
                     <ul id="search_by"
-                        class="cursor-pointer hidden absolute z-10 px-3 bottom-[-5px] c bg-white left-4 pb-3 h-auto w-[95%] text-sm rounded-xl shadow-md shadow-[0px 2px 20px rgba(69, 130, 220, 0.1)] text-[#2B313B]"
+                        class="cursor-pointer hidden absolute z-10 px-3 bottom-[-35px] c bg-white left-4 pb-3 h-auto w-[95%] text-sm rounded-xl shadow-md shadow-[0px 2px 20px rgba(69, 130, 220, 0.1)] text-[#2B313B]"
                         aria-labelledby="dropdownSearchButton">
 
                     </ul>
