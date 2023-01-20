@@ -42,7 +42,7 @@
             <div class="main-area basis-full p-2 md:p-0 md:basis-8/12">
                 <!-- left-side-area start -->
                 <div class="main-inner p-5 border border-[#F5F8FF] rounded-t-2xl">
-                    <form action="{{ url('/calculate-bmi') }}" method="post" enctype="multipart/form-data">
+                    <form id="bmi_form" data-parsley-validate="" action="{{ url('/calculate-bmi') }}"  method="post" enctype="multipart/form-data">
                         @csrf
                         <!-- form start -->
                         <div class="grid gap-6 mb-6 md:grid-cols-2">
@@ -164,25 +164,28 @@
 
                                 </span>
                                 <div class="flex">
-                                    <input type="text" name="age" id="age"
+                                    <input type="text" name="age" id="age" data-parsley-type="number"
                                         class="rounded-none rounded-l-lg bg-white border border-r-0 border-[#A4BCE6] text-[#6C7A93] font-normal text-xs focus:ring-[#3b82f6] focus:outline-none focus:border-[#3b82f6] block flex-1 min-w-0 w-full p-3.5"
-                                        placeholder="">
+                                        placeholder="" required="" data-parsley-errors-container="#age_error">
                                     <span
                                         class="inline-flex items-center px-3 bg-white text-[#000] font-semibold text-xs focus:ring-[3b82f6] border-[#A4BCE6] border rounded-r-md">
                                         Year
                                     </span>
+                                    <label data-parsley-errors-container="#element"></label>
                                 </div>
                                 @error('age')
                                     <span style="color:red">*{{ $message }}</span>
                                 @enderror
+
+                                <span id="age_error" ></span>
                             </div>
                             <div>
                                 <label for="weight"
                                     class="block mb-2  text-xs font-normal text-[#000000]">{{ $details[0]->weight_label }}</label>
                                 <div class="flex">
-                                    <input type="text" name="weight" id="weight"
+                                    <input type="text" name="weight" id="weight" data-parsley-type="number"
                                         class="rounded-none rounded-l-lg bg-white border border-r-0 border-[#A4BCE6] text-[#6C7A93] font-normal text-xs focus:ring-[#3b82f6] focus:outline-none focus:border-[#3b82f6] block flex-1 min-w-0 w-full p-3.5"
-                                        placeholder="">
+                                        placeholder="" required="" data-parsley-errors-container="#weight_error">
                                     <span
                                         class="inline-flex items-center px-3 bg-white text-[#000] font-semibold text-xs focus:ring-[3b82f6] border-[#A4BCE6] border rounded-r-md">
                                         Kg
@@ -191,6 +194,8 @@
                                 @error('weight')
                                     <span style="color:red">*{{ $message }}</span>
                                 @enderror
+
+                                <span id="weight_error"></span>
                             </div>
                             <div> <span class="flex justify-between">
                                     <label for="height"
@@ -244,9 +249,9 @@
                                     <!--Code Block for white tooltip ends-->
                                 </span>
                                 <div class="flex">
-                                    <input type="text" name="height" id="height"
+                                    <input type="text" name="height" id="height" data-parsley-type="number"
                                         class="rounded-none rounded-l-lg bg-white border border-r-0 border-[#A4BCE6] text-[#6C7A93] font-normal text-xs focus:ring-[#3b82f6] focus:outline-none focus:border-[#3b82f6] block flex-1 min-w-0 w-full p-3.5"
-                                        placeholder="">
+                                        placeholder="" required="" data-parsley-errors-container="#height_error">
                                     <span
                                         class="inline-flex items-center px-3 bg-white text-[#000] font-semibold text-xs focus:ring-[3b82f6] border-[#A4BCE6] border rounded-r-md">
                                         Cm
@@ -255,6 +260,7 @@
                                 @error('height')
                                     <span style="color:red">*{{ $message }}</span>
                                 @enderror
+                                <span id="height_error"></span>
                             </div>
                         </div>
                         <div class="sm:flex my-8">
@@ -283,7 +289,7 @@
                                 <div class="flex-wrap flex md:flex-none">
                                     <a href="/vat-calculator"
                                         class="text-[#0052FE] bg-white border border-[#0052FE] font-normal rounded-md transition-all text-[10px] px-2.5 py-1 text-center mr-2 mb-2">Vat calculator</a>
-                                   
+
                                 </div>
                             </div>
                             <div class="w-full mt-4 lg:mt-0 lg:w-auto social-links text-left lg:text-right">
@@ -322,7 +328,7 @@
                     <livewire:components.b-m-i.related-articles />
                     <livewire:components.b-m-i.bmi-faq />
                     <livewire:components.b-m-i.bmi-ratings />
-                   
+
                 </div>
             </div>
             <!-- right-side-area-end -->
@@ -355,11 +361,21 @@
             }));
         })
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
 
-   
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" ></script>
+
+    <script>
+        $('#bmi_form').parsley({
+            errors: {
+                container: function ( elem ) {
+                    return $( elem ).parent();
+                }
+            }
+        });
+    </script>
+
+
 
 
 </div>

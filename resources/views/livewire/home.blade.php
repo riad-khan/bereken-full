@@ -130,13 +130,13 @@
             show = !show;
             let showElement = document.getElementsByClassName('show-search');
           if(show === true){
-            
+
             showElement[0].classList.remove('hidden');
 
             let saved_search = JSON.parse(localStorage["saved_search"]);
                 let li='' ;
             saved_search.map((item, i) => {
-    
+
                    li +='<li class="color-[#2B313B] font-normal text-base"><span>' + item +
                     ' <button onclick="removeItem(' + i +
                     ')"> <img src="{{ asset('/frontend/assets/img/close-white.svg') }}" alt="icon"></button></span></li>'
@@ -166,7 +166,7 @@
                 console.log(true);
                }
 
-               
+
             }
 
         }
