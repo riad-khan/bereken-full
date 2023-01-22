@@ -254,9 +254,9 @@
                                 <div class="flex">
                                     <input type="text" name="height" id="height" data-parsley-type="number"
                                         class="rounded-none rounded-l-md bg-white border border-r-0 border-[#A4BCE6] text-[#6C7A93] font-normal text-xs focus:ring-[#3b82f6] focus:outline-none focus:border-[#3b82f6] block flex-1 min-w-0 w-full p-3"
-                                        placeholder="" required="" data-parsley-errors-container="#height_error">
+                                        placeholder="" required="" data-parsley-errors-container="#height_error" >
                                     <span
-                                        class="inline-flex items-center px-3 bg-white text-[#000] font-semibold text-xs focus:ring-[3b82f6] border-[#A4BCE6] border rounded-r-md">
+                                        class="input-label inline-flex items-center px-3 bg-white text-[#000] font-semibold text-xs focus:ring-[3b82f6] border-[#A4BCE6] border rounded-r-md">
                                         Cm
                                     </span>
                                 </div>
@@ -370,11 +370,13 @@
 
     <script>
         $('#bmi_form').parsley({
-            errors: {
-                container: function ( elem ) {
-                    return $( elem ).parent();
-                }
-            }
+            trigger:      'change',
+            successClass: "success",
+            errorClass: "error",
+            classHandler: function (el) {
+                return el.$element.closest('.flex'); //working
+            },
+
         });
     </script>
 
