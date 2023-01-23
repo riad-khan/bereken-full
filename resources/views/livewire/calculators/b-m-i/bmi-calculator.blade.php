@@ -8,9 +8,9 @@
         <div class="container mx-auto max-w-screen-xl">
             <!-- container start -->
             <div class="section-title text-center ">
-                <h1 class="flex justify-center items-center text-[32px] font-semibold text-[#2B313B] p-4 sm:pb-6  sm:pt-4">BMI Calculator <svg class="ml-4" width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0.799805 3.99999C0.799805 2.23268 2.23249 0.799988 3.9998 0.799988H19.9998C21.7671 0.799988 23.1998 2.23268 23.1998 3.99999V20C23.1998 21.7673 21.7671 23.2 19.9998 23.2H3.9998C2.23249 23.2 0.799805 21.7673 0.799805 20V3.99999ZM18.3998 5.59999H5.5998V18.4L11.9998 15.2L18.3998 18.4V5.59999Z" fill="#112954"/>
-</svg>
+                <h1 class="flex justify-center items-center text-[32px] font-semibold text-[#2B313B] p-4 sm:pb-6  sm:pt-4">BMI Calculator <svg class="transition ml-2 cursor-pointer" fill="#112954" width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.799988 3.99999C0.799988 2.23268 2.23268 0.799988 3.99999 0.799988H20C21.7673 0.799988 23.2 2.23268 23.2 3.99999V20C23.2 21.7673 21.7673 23.2 20 23.2H3.99999C2.23268 23.2 0.799988 21.7673 0.799988 20V3.99999ZM18.4 5.59999H5.59999V18.4L12 15.2L18.4 18.4V5.59999Z"></path>
+                                </svg>
 </h1>
             </div>
             <nav class="flex justify-center" aria-label="Breadcrumb">
@@ -166,7 +166,7 @@
 
 
                                 </span>
-                                <div class="flex">
+                                <div class="flex single-field-wrapper">
                                     <input type="text" name="age" id="age" data-parsley-type="number"
                                         class="rounded-none rounded-l-md bg-white border border-r-0 border-[#A4BCE6] text-[#6C7A93] font-normal text-xs focus:ring-[#3b82f6] focus:outline-none focus:border-[#3b82f6] block flex-1 min-w-0 w-full p-3"
                                         placeholder="" required="" data-parsley-errors-container="#age_error">
@@ -182,10 +182,10 @@
 
                                 <span id="age_error" ></span>
                             </div>
-                            <div>
+                            <div class="">
                                 <label for="weight"
                                     class="block mb-2  text-xs font-normal text-[#000000]">{{ $details[0]->weight_label }}</label>
-                                <div class="flex">
+                                <div class="flex single-field-wrapper">
                                     <input type="text" name="weight" id="weight" data-parsley-type="number"
                                         class="rounded-none rounded-l-md bg-white border border-r-0 border-[#A4BCE6] text-[#6C7A93] font-normal text-xs focus:ring-[#3b82f6] focus:outline-none focus:border-[#3b82f6] block flex-1 min-w-0 w-full p-3"
                                         placeholder="" required="" data-parsley-errors-container="#weight_error">
@@ -251,7 +251,7 @@
                                     </div>
                                     <!--Code Block for white tooltip ends-->
                                 </span>
-                                <div class="flex">
+                                <div class="flex single-field-wrapper">
                                     <input type="text" name="height" id="height" data-parsley-type="number"
                                         class="rounded-none rounded-l-md bg-white border border-r-0 border-[#A4BCE6] text-[#6C7A93] font-normal text-xs focus:ring-[#3b82f6] focus:outline-none focus:border-[#3b82f6] block flex-1 min-w-0 w-full p-3"
                                         placeholder="" required="" data-parsley-errors-container="#height_error" >
@@ -269,7 +269,7 @@
                         <div class="sm:flex my-8">
                             <div class="sm:flex sm:items-center">
                                 <button type="submit"
-                                    class="outline-btn btn-translate-z flex bg-[#112954] justify-center text-white font-bold rounded-lg text-xs w-full sm:w-72 px-5 py-4"><span>{{ $details[0]->button_text }}</span></button>
+                                    class="outline-btn btn-translate-z flex bg-[#112954] justify-center text-white font-bold rounded-lg text-base w-full sm:w-72 px-5 py-4"><span>{{ $details[0]->button_text }}</span></button>
                                 <p class="my-4 sm:ml-6 text-[10px] text-[#6C7A93] font-nomrmal">
                                     <i>*{!! html_entity_decode($details[0]->button_details) !!} </i>
                                 </p>

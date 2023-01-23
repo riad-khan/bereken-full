@@ -370,7 +370,7 @@
                         <h6 class="text-2xl sm:text-xl lg:text-2xl font-normal mb-8 text-[#2B313B]">We are best reached
                             via WhatsApp and chat Feel free to contact us if you want to know more. We are there today
                             until 18:00.</h6>
-                        <a href="/contact-us"  class="outline-btn btn-translate-z flex w-fit m-auto md:m-0 bg-[#112954] text-white text-base font-bold py-2.5 px-6 rounded-lg transition-all">Contact Us</a>
+                        <a href="/contact-us"  class="outline-btn btn-translate-z flex w-fit m-auto md:m-0 bg-[#112954] text-white text-base font-bold py-2.5 px-14 rounded-lg transition-all">Contact Us</a>
                     </div>
                 </div>
             </div>

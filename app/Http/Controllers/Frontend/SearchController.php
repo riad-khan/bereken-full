@@ -28,10 +28,10 @@ class SearchController extends Controller
                 //echo '<li><a href="/'.strtolower($slug).'">'.$row->calculator_name.'</a></li>';
 
                 echo '<li>
-                <div onclick="save_search(this)" data-name="'.$row->calculator_name.'" data-href="/'.strtolower($slug).'" class="flex pl-2 rounded hover:bg-gray-100 dark:hover:bg-gray-600">
+                <div onclick="save_search(this)" data-name="'.$row->calculator_name.'" data-href="/'.strtolower($slug).'" class="flex p-3 rounded  hover:bg-gray-100">
                 
                 <label for="checkbox-item-11"
-                class="py-2 ml-2 w-full text-sm font-medium text-gray-900 rounded dark:text-gray-300">' . $row->calculator_name . '</label>
+                class="w-full text-sm font-medium text-gray-900 cursor-pointer rounded">' . $row->calculator_name . '</label>
                 
                 </div>
             

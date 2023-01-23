@@ -31,7 +31,7 @@
                             <span><a href="/calculations">Calculations</a></span>
                             <svg fill="currentColor" viewBox="0 0 20 20"
                                 :class="{ 'rotate-180': open, 'rotate-0': !open }"
-                                class="inline w-4 h-4 mt-1 mr-2 transition-transform duration-200 transform md:-mt-1">
+                                class="hidden md:inline w-4 h-4 mt-1 mr-2 transition-transform duration-200 transform md:-mt-1">
                                 <path fill-rule="evenodd"
                                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                                     clip-rule="evenodd"></path>
@@ -43,7 +43,7 @@
                             x-transition:leave="transition ease-in duration-75"
                             x-transition:leave-start="transform opacity-100 scale-100"
                             x-transition:leave-end="transform opacity-0 scale-95"
-                            class="absolute right-0 w-full origin-top-right rounded-md shadow-lg border-t border-[#F5F8FF]">
+                            class="absolute hidden md:block right-0 w-full origin-top-right rounded-md shadow-lg border-t border-[#F5F8FF]">
 
                             <div :class="{ 'grid': open, 'hidden': !open }"
                                 class="hidden grid inset-x-0 top-0 absolute z-40 grid-cols-1 w-full text-sm bg-white shadow-md">

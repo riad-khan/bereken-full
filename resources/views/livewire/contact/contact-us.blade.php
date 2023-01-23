@@ -106,6 +106,11 @@
     </section><script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" ></script>
 <script>
+    function selectBorder(ele){
+    jQuery(ele).parent().parent().find("label.active-border").removeClass("active-border");
+    jQuery(ele).addClass("active-border");
+}
+
     $('#contact_form').parsley();
 </script>
 </div>

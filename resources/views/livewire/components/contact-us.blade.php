@@ -9,7 +9,7 @@
                     </div>
                     <div class="text-content text-center sm:w-3/5 sm:text-left">
                         <h6 class="text-2xl sm:text-xl lg:text-2xl font-normal mb-8 text-[#2B313B]">{{$details[0]->content}}</h6>
-                        <a href="/contact-us"  class="outline-btn btn-translate-z flex w-fit m-auto md:m-0 bg-[#112954] text-white text-base font-bold py-2.5 px-6 rounded-lg transition-all">Contact Us</a>
+                        <a href="/contact-us"  class="outline-btn btn-translate-z flex w-fit m-auto md:m-0 bg-[#112954] text-white text-base font-bold py-2.5 px-14 rounded-lg transition-all">Contact Us</a>
                     </div>
                 </div>
             </div>

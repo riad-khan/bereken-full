@@ -27,7 +27,7 @@
 
 
                     <div class="no-label w-full sm:w-52">
-                        <div class="select" id="news">
+                        <div class="select" onclick="newsPage(this)" id="news">
                             <div class="selectBtn" data-type="firstOption">All News</div>
                                 <div class="selectDropdown">
                                     <div class="option" data-type="firstOption">All News</div>
@@ -165,6 +165,12 @@
         }
     </script>
     <script>
+        function newsPage(e){
+            jQuery(e).toggleClass("active-border");
+        }
+
+
+
         window.slides = []
         sliderData = function(slides) {
             return {

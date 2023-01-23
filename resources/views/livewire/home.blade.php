@@ -71,7 +71,7 @@
                                 </button>
                                 
                                 <ul id="search_by"
-                                    class="cursor-pointer hidden absolute z-20 px-3 top-12 bg-white left-0 pb-3 h-auto w-full text-sm rounded-[5px] shadow-md shadow-[0px 2px 20px rgba(69, 130, 220, 0.1)] text-[#2B313B]"
+                                    class="cursor-pointer absolute z-20 top-12 bg-white left-0 h-auto w-full text-sm rounded-[5px] shadow-md shadow-[0px 2px 20px rgba(69, 130, 220, 0.1)] text-[#2B313B]"
                                     aria-labelledby="dropdownSearchButton">
                                 </ul>
                             </div>

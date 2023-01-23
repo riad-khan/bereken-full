@@ -15,7 +15,7 @@
             <img class="w-auto h-16 sm:w-auto sm:h-10 lg:w-auto lg:h-16 rounded w-full mb-0 sm:w-auto"
                 src="{{url($item->banner_image)}}" alt="icon" />
             <div
-                class="ml-3 text-base text-sm sm:text-xs lg:text-sm w-10/12 inline-block font-semibold">
+                class="ml-3 text-base text-sm leading-5 sm:text-base lg:text-base w-10/12 inline-block font-semibold">
                 Clear, transparent and affordable for more than 20y
             </div>
         </a>
